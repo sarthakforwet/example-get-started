@@ -1,7 +1,7 @@
 import sys
 import os
 
-from sklearn.metrics import precision_recall_curve
+from sklearn.metrics import r2_score
 import sklearn.metrics as metrics
 
 try:
@@ -30,10 +30,10 @@ x = matrix[:, 2:]
 predictions_by_class = model.predict_proba(x)
 predictions = predictions_by_class[:, 1]
 
-precision, recall, thresholds = precision_recall_curve(labels, predictions)
+r2 = r2_score(labels, predictions)
 
-auc = metrics.auc(recall, precision)
+#auc = metrics.auc(recall, precision)
 
 with open(metrics_file, 'w') as fd:
-    fd.write('{:4f}\n'.format(auc))
+    fd.write('{:4f}\n'.format(r2))
 

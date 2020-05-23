@@ -1,13 +1,12 @@
-md5: 0262b3d2369f126f3bfe99c8b9424791
-cmd: python src/featurization.py data/prepared data/features
-wdir: .
+md5: 5e981310e5b0dc28e8e57d357cc20f86
+cmd: python3 src/featurization.py data/prepared data/features
 deps:
 - md5: ef70c6c0fbf4107fdab468af66333f48
   path: src/featurization.py
 - md5: 6836f797f3924fb46fcfd6b9f6aa6416.dir
   path: data/prepared
 outs:
-- md5: 42c7025fc0edeb174069280d17add2d4.dir
+- md5: 9c659c0a2c1a6b4a37421c1f25016110.dir
   path: data/features
   cache: true
   metric: false

@@ -1,6 +1,5 @@
-md5: 645d5baf13fb4404e17d77a2cf7461c4
-cmd: python src/prepare.py data/data.xml
-wdir: .
+md5: 1c534939340c364112e80937addc7e5d
+cmd: python3 src/prepare.py data/data.xml
 deps:
 - md5: 1a18704abffac804adf2d5c4549f00f7
   path: src/prepare.py

@@ -1,0 +1,13 @@
+md5: dcdfeb4fecb07e2b84eeb4e57f1bc41f
+cmd: python3 src/newscore.py r2_score.metric newscore.txt
+deps:
+- md5: 279b7ae864c020157f05853c506d8df0
+  path: r2_score.metric
+- md5: c2c4ce6d6ea0f4f962f3067cac526da2
+  path: src/newscore.py
+outs:
+- md5: 618a2609091f6b52550871b4ff3920bb
+  path: newscore.txt
+  cache: true
+  metric: false
+  persist: false
